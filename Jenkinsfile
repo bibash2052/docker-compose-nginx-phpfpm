@@ -3,7 +3,7 @@ pipeline {
     stages {
             stage('Checkout') {
                 steps {
-                    "git checkout https://github.com/bibash2052/docker-compose-nginx-phpfpm.git"
+                    sh 'git checkout https://github.com/bibash2052/docker-compose-nginx-phpfpm.git'
                 }
             }
             stage('Build Docker Image') {
